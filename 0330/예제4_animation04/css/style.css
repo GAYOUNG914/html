@@ -1,0 +1,68 @@
+@charset "UTF-8";
+html,body{ height: 100%; }
+ul,li{list-style: none;}
+a{ text-decoration: none; }
+img{ border: 0; }
+*{ margin: 0; padding: 0; }
+
+.bouncing_ball{
+  position: absolute;
+  width: 140px;
+  height: 140px;
+  border-radius: 100%;
+  background: #ccc;
+  margin-top: 50px;
+  animation-name: bounce;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.bouncing_ball h1{
+  text-align: center;
+  line-height: 140px
+}
+
+.bottom_line{
+  position: absolute;
+  top: 330px;
+  width: 100vw;
+  height: 2px;
+  background: black;
+}
+
+@keyframes bounce{
+  0%{
+    top:0;
+    left:0;
+    animation-timing-function: ease-in;
+    background-color: red;
+    transform: rotate(0deg);
+    } /*ease-in:느렸다가 원상복구*/
+  50%{
+    top:140px;
+    height: 140px;
+    animation-timing-function: ease-out;
+    background-color: orange;
+    } /*ease-out:빨랐다가 느려짐*/
+  55%{
+    top: 160px;
+    left: 200px;
+    height:120px;/*땅에 닿았을 때 20만큼 옵젝트 높이가 줄어들고(찌그러져서) 그만큼 top에서 20만큼 더 떨어짐*/
+    animation-timing-function: ease-in;
+    background-color: yellow;
+  }
+  65%{
+    top: 120px;
+    height:140px;
+    animation-timing-function: ease-out;
+    background-color: green;
+  }
+  100%{
+    top: 0;
+    left: 400px;
+    animation-timing-function: ease-in;
+    background-color: blue;
+    transform: rotate(360deg);
+  }
+}

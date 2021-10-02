@@ -1,0 +1,125 @@
+@charset "UTF-8";
+html,body{ height: 100;}
+ol,ul{ list-style: none; }
+ol,ul,li{ margin: 0; padding: 0; }
+a{ text-decoration: none; color: #666666; }
+
+input#toggle{ display: none; }
+input#toggle + #wrap #toggle_gnb_wrap { display: none; }
+input#toggle:checked + #wrap #toggle_gnb_wrap { display: block; }
+
+#main_header{
+  position: relative;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  background: url('../img/header_background.png');
+}
+
+#main_header > h1{
+  color: white;
+}
+
+#main_header > a, #main_header > label{
+  position: absolute;
+  display: block;
+  height: 32px;
+}
+
+#main_header > a.left{
+  width: 62px;
+  left: 5px;
+  top: 7px;
+  background: url('../img/sprites.png');
+  background-position: 0 0;
+  text-indent: -9999px;
+}
+
+#main_header > label.right{
+  width: 32px;
+  right: 5px;
+  top: 7px;
+  background: url('../img/sprites.png');
+  background-position: -62px 0;
+  text-indent: -9999px;
+}
+
+#toggle_gnb_wrap{
+  background: #363636;
+  padding: 15px;
+}
+
+#toggle_gnb{
+  background: #ffffff;
+  padding: 5px;
+}
+
+#toggle_gnb > ul{ overflow: hidden; }
+
+#toggle_gnb > ul > li{
+  width: 80px;
+  float: left;
+  text-align: center;
+}
+
+/* 상단 gnb */
+#top_gnb{
+  overflow:hidden;
+  border-bottom: 1px solid black;
+  background: #b42111;
+}
+
+#top_gnb > div{
+  width: 25%;
+  float: left;
+}
+
+#top_gnb > div > a{
+  display: inline-block;
+  width: 100%;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  color: white;
+}
+
+/* 하단 gnb */
+#bottom_gnb{
+  display: table;
+  width: 100%;
+  border-bottom: 1px solid black;
+}
+
+#bottom_gnb > div{
+  position: relative;
+  display: table-cell;
+}
+
+#bottom_gnb > div > a{
+  display: block;
+  line-height: 35px;
+  text-align: center;
+}
+
+#bottom_gnb > div > a:before{
+  content: '';
+  position: absolute;
+  display: inline-block;
+  width: 2px;
+  height: 15px;
+  background: black;
+  left: -1px;
+  top: calc( 50% - 7.5px );
+}
+
+#bottom_gnb > div:first-child > a:before{
+  display: none;
+}
+
+#section_header{
+  padding: 20px;
+}
+
+#section_article{
+  padding: 10px;
+}

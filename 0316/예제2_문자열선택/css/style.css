@@ -1,0 +1,70 @@
+@charset "UTF-8";
+.input_wrap input[name*=s]{
+  background: blue;
+}
+
+.gnb{
+  background: #f1f1f1;
+}
+
+.gnb.yellow{
+  background: yellow;
+}
+
+.gnb.black{
+  background: black;
+}
+
+.gnb ul li{
+  height: 30px;
+}
+
+.gnb ul li a{
+  line-height: 30px;
+  padding: 0 10px;
+}
+
+.gnb.topmenu ul{
+  overflow: hidden;
+}
+
+.gnb.topmenu ul li{
+  float: left;
+}
+
+/* .gnb[class~=black]{
+  display: none;
+} */
+
+.input_wrap ~ .gnb[class~=black]{
+  display: none;
+}
+
+.location div[class|=ko]{/* 문자열 선택자중 '|'는 단어를 구분할때 '-'로 구분한다.*/
+  color: blue;
+}
+
+.thumbnail ul{
+  width: 800px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.thumbnail ul li{
+  width: calc(25% - 20px);
+  margin: 0 10px;
+  float: left;
+}
+
+.thumbnail ul li a img{
+  width: 100%;
+}
+
+.thumbnail ul li a[href^=https] img{
+  opacity: 0.2;
+}
+
+.thumbnail ul li a img[src$=png]{
+  border : 10px solid red;
+  box-sizing : border-box;
+}

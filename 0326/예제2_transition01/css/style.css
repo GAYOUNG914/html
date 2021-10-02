@@ -1,0 +1,40 @@
+@charset "UTF-8";
+html,body{ height: 100%; }
+body{ font-family: 'Noto Sans KR', sans-serif; color: #666;}
+ul,li{ list-style: none; }
+a{ color: #666;}
+h1,h2,h3,h4,h5,h6{ line-height: 1; } /*폰트사이즈에 맞는 라인하이트를 쓰겠다.*/
+
+div{
+  width: 300px;
+  height: 50px;
+  background-color: red;
+  transition-property: width;
+  transition-duration: 3s; /*.2s=0.2s*/
+  transition-timing-function: linear;
+  /* transition-delay: 1s; */
+}
+
+div:nth-child(1){
+  background: green;
+  transition-timing-function: ease;
+}
+div:nth-child(2){
+  background: yellow;
+  transition-timing-function: ease-in;
+}
+div:nth-child(3){
+  background: blue;
+}
+div:nth-child(4){
+  background: pink;
+  transition-timing-function: ease-in-out;
+}
+div:nth-child(5){
+  background: red;
+  transition-timing-function: linear;
+}
+
+div:hover{
+  width: 150px;
+}

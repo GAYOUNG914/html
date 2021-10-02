@@ -1,0 +1,23 @@
+@charset "UTF-8";
+html,body{ height: 100;}
+ol,ul{ list-style: none; }
+ol,ul,li{ margin: 0; padding: 0; }
+a{ text-decoration: none; color: #666666; }
+.box{
+  width: 36px;
+  height: 36px;
+  border: 1px solid #ddd;
+  background: url('../img/css_sprites (1).png');
+}
+
+.box.icon1{
+  background-position: 0 0;
+}
+
+.box.icon2{
+  background-position: 0 -36px;
+}
+
+.box.icon3{
+  background-position: 0 -72px;
+}

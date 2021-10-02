@@ -1,0 +1,32 @@
+@charset "UTF-8";
+.float_wrap{
+  background: red;
+  color: white;
+  overflow: hidden;
+}
+
+.items_wrap{
+  float: left;
+  background: blue;
+  color: white;
+}
+
+.items_wrap.right{
+  float: right;
+}
+
+.items{
+  float: left;
+  background: yellow;
+  color: black;
+}
+
+
+.items_wrap .items{
+  margin-right: 5px;
+}
+
+.items_wrap.right .items{
+  margin-right: 0px;
+  margin-left: 5px;
+}

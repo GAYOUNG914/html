@@ -1,0 +1,375 @@
+@charset "UTF-8";
+/* @import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Fredoka+One&family=Maven+Pro:wght@400;500;600;700;800;900&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+html,body{ height: 100%; }
+body{ font-family: 'Noto Sans KR', sans-serif; color: #666666; }
+ul,li{ list-style: none; }
+a{ color: #666666; }
+h1,h2,h3,h4,h5,h6{ line-height: 1; }
+
+/*상단 고정형 메인메뉴*/
+#header{
+  position: relative;
+  width: 1320px;
+  height: 100px;
+  top: 10px;
+  margin: 0 auto;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding: 20px 0;
+  /* font-family: 'Fredoka One', cursive; */
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 500;
+}
+
+/* #header .logo .inner{
+  line-height: 100px;
+} */
+
+#header .logo{
+  float: left;
+}
+
+#header .logo img{
+  width: 100px;
+}
+
+#header .inner{
+  overflow: hidden;
+  float: right;
+}
+
+
+#header .inner .gnb{
+  float: left;
+  overflow: hidden;
+  line-height: 80px;
+  margin-right: 20px;
+}
+
+#header .inner .gnb li{
+  float: left;
+  padding-right: 30px;
+}
+
+#header .inner .gnb > li{
+  transition: 0.5s;
+  transform-origin: center;
+}
+
+#header .inner .gnb > li:hover{
+  transform: scale( 1.2, 1.2 )
+}
+
+#header .inner .gnb > li:first-child > a{
+  font-weight: bold;
+  color: blue;
+  margin-left: 20px;
+}
+
+#header .inner .gnb > li:last-child > a{
+  font-weight: bold;
+  color: skyblue;
+}
+
+#header .inner .login_menu{
+  float: left;
+  overflow: hidden;
+}
+
+#header .inner .login_menu li{
+ float: left;
+ padding: 20px 5px;
+}
+
+#header .inner .login_menu .my_account{
+  width: 146px;
+  height: 38px;
+  border-radius: 50px;
+  color: #000f3b;
+  background-color: #f1f2f2;
+  border-color: transparent;
+  line-height: 38px;
+  text-align: center;
+}
+
+#header .inner .login_menu .my_account:hover{
+  background-color: #000f3b;
+  color: #f1f2f2;
+}
+
+#mainbanner{
+  overflow: hidden;
+  margin-top: 50px
+}
+
+#mainbanner .inner{
+  width: 1320px;
+  height: 465px;
+  margin: auto;
+}
+
+#mainbanner .textbox{
+  float: left;
+  width: 50%;
+  height: 465px;
+  /* background: skyblue; */
+}
+
+#mainbanner .maintext , .subtext{
+  position: relative;
+  top: 70px;
+  left: 20px;
+}
+
+#mainbanner .maintext > p:first-child{
+  font-size: 15px;
+  color: #777;
+  font-weight: bold;
+}
+
+#mainbanner .maintext > p span{
+  color: #444;
+  font-weight: 400;
+}
+
+#mainbanner .maintext > p:last-child{
+  margin: 30px 0;
+  font-size: 60px;
+  line-height: normal;
+  /* font-family: 'Fredoka One', cursive; */
+  font-family: 'Quicksand', sans-serif;
+  font-weight: 600;
+  color: blue;
+}
+
+#mainbanner .subtext{
+  line-height: normal;
+  font-size: 20px;
+  /* font-weight: lighter; */
+  color: #777;
+  margin-top: 40px;
+  /* font-family: 'Balsamiq Sans', cursive; */
+  font-family: 'Quicksand', sans-serif;
+}
+
+#mainbanner .imgbox_bg{
+  position: relative;
+  float: right;
+  width: 50%;
+  height: 465px;
+  border-radius: 25px;
+  background: #fef5d8;
+}
+
+ #mainbanner .imgbox{
+   position: absolute;
+   left: -100px;
+   width: 120%;
+   height: 465px;
+   background: url('../img/mainbanner.png') no-repeat center;
+   background-size: contain;
+   z-index: 5;
+ }
+
+ #mainbanner .seemorebtn{
+   float: left;
+   width: 204px;
+   height: 55px;
+   border-radius: 25px;
+   background-color: blue;
+   margin-left: 10px
+ }
+
+#mainbanner .seemorebtn:hover{
+   background-color: skyblue;
+}
+
+ #mainbanner .seemorebtn a{
+   color: white;
+   line-height: 55px;
+   margin-left: 35px;
+   font-size: 15px;
+ }
+
+ section{
+   width: 1320px;
+   margin: 0 auto;
+   overflow: hidden;
+   /* background: yellow; */
+   padding-top: 150px;
+ }
+
+ #first h2{
+   text-align: center;
+   padding: 30px 0;
+   font-size: 50px;
+   /* font-family: 'Fredoka One', cursive; */
+   font-family: 'Quicksand', sans-serif;
+   font-weight: 500;
+   color: #232323;
+   /* background: skyblue; */
+ }
+
+ #first .items{
+   float: left;
+   width: calc( 25% - 40px );
+   padding: 10px 20px;
+   text-align: center;
+   /* background: pink; */
+   margin-top: 40px;
+ }
+
+ #first .items .bg_box{
+   position: relative;
+   width: 272px;
+   height: 365px;
+   border: 1px solid #e4e4e4;
+   border-radius: 15px;
+ }
+
+ #first .box_textbox{
+   position: absolute;
+   bottom: 10px;
+   left: 80px;
+   transition: 0.5s;
+   transform-origin: center;
+ }
+
+ #first .box_textbox:hover{
+   transform: scale( 1.5, 1.5 )
+ }
+
+
+#first .box_textbox h3{
+  font-size: 22px;
+  /* font-family: 'Fredoka One', cursive; */
+  font-family: 'Quicksand', sans-serif;
+  color: black;
+}
+
+ #first .box_textbox p{
+   margin: 10px 0;
+   font-size: 18px;
+   color: blue;
+   /* font-family: 'Fredoka One', cursive; */
+   font-family: 'Quicksand', sans-serif;
+   font-weight: bold;
+ }
+
+#first .items .bg_box{
+  padding: 10px;
+}
+
+#first .items .bg_box1{
+  background:url('../img/Mac1.jpg') center no-repeat;
+  background-size: contain;
+  background-color: white;
+}
+
+#first .items .bg_box2{
+  background:url('../img/mac2jpeg.jpeg') center no-repeat;
+  background-size: contain;
+  background-color: white;
+}
+
+#first .items .bg_box3{
+  background:url('../img/airpod.png') center no-repeat;
+  background-size: contain;
+  background-color: white;
+}
+
+#first .items .bg_box4{
+  background:url('../img/headphone.jpg') center no-repeat;
+  background-size: contain;
+  background-color: white;
+}
+
+#footer{
+  background: #0058e7;
+  margin-top: 100px;
+
+}
+
+#footer .inner{
+  position: relative; /*드롭박스의 absolute를 위해서 relative로 지정*/
+  width: 1320px;
+  height: 200px;
+  margin: 0 auto;
+  padding: 50px 20px 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+#footer .inner .f_box{
+  float: left;
+}
+
+#footer .inner .f_box:nth-of-type(2){
+  padding-left: 75px;
+}
+
+/*footer site menu*/
+#footer .inner .f_box ul{
+  overflow: hidden;
+}
+
+#footer .inner .f_box ul li{
+  height: 20px;
+  float: left;
+  margin-right: 57px;
+}
+
+#footer .inner .f_box ul li:last-child{
+  margin-right: 0px;
+}
+
+#footer .inner .f_box ul li a{
+  line-height: 20px;
+  color: #f1f1f1;
+}
+
+#footer .inner .f_box .tel{
+  margin-top: 20px;
+}
+
+#footer .inner .f_box .tel a{
+  font-size: 16px;
+  font-weight: bold;
+  color: #f1f1f1;
+}
+
+#footer .inner .f_box .copyright{
+  font-size: 12px;
+  line-height: 14px;
+  color: #f2f2f2;
+  margin-top: 23px;
+}
+
+#familysite{
+  position: absolute;
+  width: 190px;
+  height: 30px;
+  top: 40px;
+  right: 20px;
+  outline: none;
+  appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  padding-left: 15px;
+  padding-right: 30px;
+  border: 1px solid #d1d1d1;
+  background-color: white;
+  background-image: url('../img/select_box_arrow.png');
+  background-repeat: no-repeat;
+  background-position: calc( 100% - 15px ) center;
+  color: #333333;
+} /*접두사 복습*/
+
+#familysite:focus{
+  border: 1px solid #999999;
+  background-image: url('../img/select_box_arrow_focus.png');
+}

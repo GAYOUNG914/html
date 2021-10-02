@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+#header{
+  min-width: 1200px;
+  border-bottom: 1px solid #f1f1f1;
+  padding: 0 15px;
+  overflow: hidden;
+}
+
+#gnb{
+  float: right;
+}
+
+#gnb ul{
+  overflow:hidden;
+}
+
+#gnb ul li{
+  float: left;
+  height: 60px;
+  margin-right: 10px;
+}
+
+#gnb ul li:last-child{
+  margin-right: 0px;
+}
+
+#gnb ul li:nth-child(odd) a{
+  color: blue;
+}
+
+#gnb ul li a{
+  line-height: 60px;
+  color: red;
+}

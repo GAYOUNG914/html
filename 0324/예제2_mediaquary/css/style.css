@@ -1,0 +1,46 @@
+@charset "UTF-8";
+html,body{ height: 100%; }
+ol,ul{ list-style: none; }
+ol,ul,li{ margin: 0; padding: 0; }
+a{ text-decoration: none; color: #666666; }
+
+#wrap{
+  display: table;
+  width: 100vw;
+  height: 100vh;
+  background: red;
+}
+
+#wrap > div{
+  display: table-cell;
+  height: 100vh;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#wrap > div:before{
+  content:'red';
+  font-size: 32px;
+  color: white;
+}
+
+@media screen and ( min-width: 500px ) {
+  #wrap{ background: yellow; }
+  #wrap > div:before{
+    content:'yellow';
+  }
+}
+
+@media screen and ( min-width: 600px ) {
+  #wrap{ background: blue; }
+  #wrap > div:before{
+    content:'blue';
+  }
+}
+
+@media screen and ( min-width: 990px ) {
+  #wrap{ background: green; }
+  #wrap > div:before{
+    content:'green';
+  }
+}

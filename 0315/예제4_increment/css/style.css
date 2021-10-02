@@ -1,0 +1,24 @@
+@charset "UTF-8";
+body{
+  background: black;
+  color: #ffffff;
+}
+
+.wrap{
+  counter-reset: list;
+}
+
+.wrap h2:before{
+  counter-increment: list;
+  content: counter(list)'.';
+}
+
+ol{
+  counter-reset: olList;
+  padding-left: 20px;
+}
+
+ol li:before{
+  counter-increment: olList;
+  content: counter(olList)'.';
+}

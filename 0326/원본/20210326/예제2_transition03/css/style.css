@@ -1,0 +1,48 @@
+@charset "UTF-8";
+html,body{ height: 100%; }
+body{ font-family: 'Noto Sans KR', sans-serif; color: #666666; }
+ul,li{ list-style: none; }
+a{ color: #666666; }
+h1,h2,h3,h4,h5,h6{ line-height: 1; }
+img{ width: 100%; }
+
+#wrap{
+  display: inline-block;
+  width: 100vw;
+  height: 100vh;
+}
+
+.content{
+  position: absolute;
+  width: 1200px;
+  height: 300px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  overflow: hidden;
+}
+
+.content .items{
+  width: 25%;
+  float: left;
+}
+
+.content .items .inner{
+  position: relative;
+  width: calc( 100% - 5px );
+  margin: 0 2.5px;
+  border: 1px solid #f1f1f1;
+  height: 295px;
+  overflow: hidden;
+}
+
+.content .items .inner > img{
+  /* position: absolute; */
+  transition: 0.5s;
+  transform-origin: center;/*기본값은 center 이다.*/
+}
+
+.content .items .inner:hover > img{
+  transform: scale( 1.2, 1.2 )
+  /* width: 120%; */
+}

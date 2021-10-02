@@ -1,0 +1,39 @@
+@charset "UTF-8";
+body{
+  background: black;
+  color: #ffffff;
+}
+
+ul li:first-child{
+  color: yellow;
+}
+/* ul li:first-of-type{
+  color: yellow;
+} */
+
+ul li:last-child{
+  color: skyblue;
+}
+/* ul li:last-of-type{
+  color: yellow;
+} */
+
+ul li:nth-last-child(1){
+  color: yellow;
+}
+/* ul li:nth-last-of-type(1){
+  color: yellow;
+/* } */
+
+/*
+div:nth-last-child(1){
+  color: yellow;
+} */
+
+/* div span:nth-child(1){
+  color: red;
+} */
+
+div span:nth-of-type(1){
+  color: red;
+}

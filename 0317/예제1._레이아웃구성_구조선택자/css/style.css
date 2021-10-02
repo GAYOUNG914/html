@@ -1,0 +1,85 @@
+@charset "UTF-8";
+
+#header{
+  min-width: 1200px;
+  border-bottom: 1px solid #f1f1f1;
+  padding: 0 15px;
+  overflow: hidden;
+}
+
+#gnb{
+  float: right;
+}
+
+#gnb ul{
+  overflow: hidden;
+}
+
+#gnb ul li{
+  float: left;
+  height: 60px;
+  margin-right: 10px;
+}
+
+#gnb ul li:last-child{
+  margin-right: 0px;
+}
+
+/* #gnb ul li:nth-child(2n) a{
+  color: red;
+} */
+/* #gnb ul li:nth-child(even) a{
+  color: red;
+} */
+
+/* #gnb ul li:nth-child(2n+1) a{
+  color: blue;
+} */
+
+#gnb ul li:nth-child(odd) a{
+  color: blue;
+}
+
+#gnb ul li a{
+  line-height: 60px;
+  color: red;
+}
+
+#container{
+  width: 1200px;
+  min-height: 500px;
+  margin: 0 auto;
+}
+
+#container h2{
+  text-align: center;
+  color: #666666;
+  padding: 30px 0 15px;
+}
+
+#container section{
+  overflow: hidden;
+}
+
+#container section .items{
+  float: left;
+  width: calc( 25% - 40px );
+  height: 100px;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+/* #container section .items:nth-child(even){
+  background: red;
+} */
+
+#footer{
+  text-align: center;
+  border-top: 1px solid #f1f1f1;
+}
+
+#footer .inner{
+  width: 1200px;
+  margin: 0 auto;
+  background: red;
+}

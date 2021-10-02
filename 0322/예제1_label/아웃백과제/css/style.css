@@ -1,0 +1,498 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nanum+Gothic:wght@400;700;800&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{
+  width: 100%;
+  min-width: 1280px;
+  color: #222;
+  font-family: 'Noto Sans', 'Nanum Gothic', dotum, gulim, verdana, sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: 0;
+  word-break: break-all;
+}
+
+h1, h2, h3, h4, h5{
+  font-weight: 400;
+}
+
+img{
+  max-width: 100%;
+}
+
+.empty-box{
+  background-color: #222222;
+  width: 100%;
+  height: 100px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+#header-wrap{
+  background-color: #222222;
+  width: 100%;
+  height: 100px;
+  position: fixed;
+  box-sizing: border-box;
+  z-index: 10;
+}
+
+#inner{
+  position: relative;
+  width: 1180px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+#header-wrap h1 {
+  position: absolute;
+  top: 28px;
+  left: 0;
+  width: 118px;
+  height: 44px;
+  z-index: 5;
+}
+
+#header-wrap img{
+  filter: drop-shadow(0 0 0 #fff);
+}
+
+#wrap{
+  overflow: hidden;
+  position: relative;
+}
+
+#wrap #lnb-wrap{
+  width: 200px;
+  height: 100%;
+  position: absolute;
+  background: #555;
+}
+
+#wrap #main_lnb{
+  float: left;
+  width: 200px;
+  background: #555;
+}
+
+#wrap #content_wrap{
+  float: right;
+  width: calc( 100% - 200px );
+}
+
+#main_lnb > ul > li > a{
+  display: block;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border-bottom: 1px solid #454545;
+  color: #f1f1f1;
+  font-size: 17px;
+  letter-spacing: 2px;
+}
+
+#main_lnb > ul > li:first-child{
+  margin-top: 50px;
+}
+
+#main_lnb > ul > li > a:hover{
+  color: #666;
+}
+
+.gnb-wrap{
+overflow:hidden;
+z-index: 1;
+}
+
+/* .gnb-wrap .bar {
+position: absolute;
+bottom: 30px;
+left: 0;
+display: block;
+width: 0;
+height: 3px;
+background-color: #be161e;
+opacity: 1;
+} */
+
+.gnb-wrap > ul > li > a:hover{
+text-decoration: underline;
+}
+
+.gnb-wrap > ul{
+  padding-left: 250px;
+}
+
+.gnb-wrap > ul > li{
+  position: relative;
+  float: left;
+  padding: 0 22px;
+}
+
+.gnb-wrap > ul > li > a {
+  display: block;
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 100px;
+  letter-spacing: 5px;
+}
+
+#global-menu{
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  overflow: hidden;
+  z-index: 3;
+}
+
+#global-menu > li {
+  float: left;
+  padding: 35px 0 35px 20px;
+}
+
+#global-menu > li:first-child{
+  padding-left: 0;
+}
+
+#global-menu > li > a {
+  display: block;
+  color: #999999;
+  font-size: 13px;
+  line-height: 30px;
+  opacity: 1;
+}
+
+#global-menu > li:last-child > a {
+  color: #ffffff;
+  width: 86px;
+  line-height: 28px;
+  border: 1px solid #555;
+  background: #555;
+  opacity: 1;
+  text-align: center;
+}
+
+#main-banner img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 1920px;
+  height: 900px;
+  max-width: none;
+}
+
+#dBody.main{
+  position: relative;
+  z-index: 5;
+  margin-top: 0;
+  overflow: hidden;
+}
+
+.main > div{
+  position: relative;
+}
+
+#section1{
+  padding-top: 140px;
+  min-height: 379px;
+  word-break: keep-all;
+}
+
+#section1 .inner-data{
+  padding: 0 30px 0 750px;
+  box-sizing: border-box;
+  z-index: 5;
+}
+
+.inner-data{
+  position: relative;
+  width: 1180px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.video{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: none;
+  outline: none;
+  border: none;
+}
+
+#section1 .en-title{
+  padding-top: 52px;
+  color: #222;
+  font-size: 54px;
+  line-height: 52px;
+  letter-spacing: 2.16px;
+}
+
+.Bebas{
+  font-family: 'Bebas Neue', cursive;
+}
+
+#section1 .ko-title{
+  padding-top: 18px;
+  color: #222;
+  font-size: 24px;
+  line-height: 32px;
+  font-weight: 500;
+}
+
+#section1 .info{
+  padding-top: 30px;
+  color: #666;
+  font-size: 15px;
+  line-height: 25px;
+}
+
+#section1 .obj-01{
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 308px;
+  height: 295px;
+  margin: -45px 0 0 -746px;
+  background-color: #fff;
+  display: none;
+}
+
+#section1 .obj-02{
+  position: absolute;
+  top: 0;
+  left: 80%;
+  width: 320px;
+  height: 381px;
+  margin: 298px -890px 0 0;
+  background: url(../img/grilled-vegetable.png) left top no-repeat;
+}
+
+#middle-banner{
+  display: block;
+  max-width: 1180px;
+  margin: 140px auto 0 auto;
+  text-align: center;
+}
+
+#middle-banner .box{
+  height: 400ps;
+  overflow: hidden;
+}
+
+a:link{
+  text-decoration: none;
+  color: #646464;
+}
+
+#middle-banner .box img{
+  max-width: 100%;
+  float: left;
+}
+
+#main-benefit{
+  padding-top: 245px;
+  text-align: center;
+}
+
+#main-benefit .inner-data{
+  min-height: 520px;
+  padding: 90px 15px;
+  background: center top no-repeat;
+  background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ),url(../img/benefit-visual.jpg);
+  background-size: cover;
+  box-sizing: border-box;
+}
+
+#main-benefit h3{
+  color: #fff;
+  font-size: 54px;
+  letter-spacing: 2.16px;
+}
+
+#main-benefit .info{
+  margin-top: 10px;
+  color: #fff;
+  font-size: 16px;
+  line-height: 24px;
+  opacity: 0.7;
+}
+
+#main-benefit ul{
+  margin-top: 68px;
+  padding: 0 45px;
+  overflow: hidden;
+}
+
+#main-benefit li{
+  float: left;
+  width: 33.33%;
+}
+
+#main-benefit ul > li > a{
+  display: inline-block;
+}
+
+#main-benefit ul > li > a > span{
+  display: block;
+}
+
+#main-benefit .icon-name{
+  margin-top: 35px;
+  color: #fff;
+  font-size: 28px;
+}
+
+#main-benefit .icon-info{
+  margin-top: 14px;
+  color: #fff;
+  font-size: 14px;
+  line-height: 22px;
+  opacity: 0.7;
+}
+
+#main-benefit .obj-01{
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 1145px;
+  height: 442px;
+  margin: 10px 0 0 -610px;
+  background: url(../img/grilled-vegetable.png) left top no-repeat;
+  z-index: -2;
+}
+
+#dFoot{
+  position: relative;
+  padding: 80px 0 80px;
+  background-color: #232323;
+  z-index: 5;
+  margin-top: 100px;
+}
+
+.footer-wrap{
+  position: relative;
+  width: 1180px;
+  padding-left: 170px;
+  margin: 0 auto;
+  color: #fff;
+  font-size: 13px;
+  box-sizing: border-box;
+}
+
+.footer-wrap h2{
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+.footer-menu{
+  position: absolute;
+  top: 0;
+  right: 0;
+  overflow: hidden;
+  z-index: 3;
+}
+
+.footer-menu > li{
+  position: relative;
+  float: left;
+  padding-left: 10px;
+  margin-left: 10px;
+}
+
+.footer-menu > li:after{
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  display: block;
+  width: 1px;
+  height: 12px;
+  margin-top: -6px;
+  background-color: #fff;
+  opacity: 0.2;
+}
+
+.footer-menu > li:first-child{
+  padding-left: 0;
+  margin-left: 0;
+  font-weight: 700;
+}
+
+.footer-menu > li > a{
+  color: #fff;
+  font-size: 13px;
+  opacity: 0.7;
+}
+
+.footer-wrap .btns{
+  margin-top: 0;
+  overflow: hidden;
+}
+
+.footer-wrap .btns > a{
+  display: block;
+  float: left;
+  width: 88px;
+  height: 28px;
+  margin-left: 10px;
+  border: 1px solid #4f4f4f;
+  text-align: center;
+}
+
+.footer-wrap .btns > a:fist-child{
+  margin-left: 0;
+}
+
+.footer-wrap .btns > a > span{
+  color: #fff;
+  font-size: 12px;
+  line-height: 28px;
+  opacity: 0.5;
+}
+
+.footer-wrap .footer-text{
+  position: relative;
+}
+
+.footer-wrap .footer-text > p{
+  margin-top: 8px;
+  opacity: 0.7;
+}
+
+.footer-wrap .footer-text > p:first-child{
+  margin-top: 20px;
+}
+
+.footer-wrap .footer-text > p span:last-child{
+  position: relative;
+  padding-left: 10px;
+  margin-left: 10px;
+}
+
+.footer-wrap .footer-text > p span:last-child:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  display: block;
+  width: 1px;
+  height: 12px;
+  margin-top: -6px;
+  background-color: #fff;
+  opacity: 0.2;
+  }
+
+  .footer-wrap .copy{
+    margin-top: 8px;
+    opacity: 0.7;
+  }

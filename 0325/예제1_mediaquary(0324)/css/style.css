@@ -1,0 +1,62 @@
+@charset "UTF-8";
+html,body{ height: 100%; }
+ol,ul{ list-style: none; }
+ol,ul,li{ margin: 0; padding: 0; }
+a{ text-decoration: none; color: #666666; }
+
+#wrap{
+  display: table;
+  width: 100vw;
+  height: 100vh;
+  background: black;
+}
+
+#wrap > div{
+  display: table-cell;
+  height: 100vh;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#wrap > div:before{
+  content:'Wide PC';
+  font-size: 32px;
+  color: white;
+}
+
+
+@media screen and ( max-width: 1200px ) {/*작은 데스크톱*/
+  #wrap{ background: red; }
+  #wrap > div:before{
+    content:'Desktop';
+  }
+}
+
+@media screen and ( max-width: 1024px ) {/*crt 모니터*/
+  #wrap{ background: blue; }
+  #wrap > div:before{
+    content:'CRT모니터, Big-tablet';
+  }
+}
+
+@media screen and ( max-width: 768px ) {/*tablet PC*/
+  #wrap{ background: green; }
+  #wrap > div:before{
+    content:'tablet PC';
+  }
+}
+
+@media screen and ( max-width: 380px ) {/*mobile*/
+  #wrap{ background: aqua; }
+  #wrap > div:before{
+    content:'mobile';
+  }
+}
+
+
+@media screen and ( max-width: 580px ) and ( orientation: landscape ) {
+  #wrap{ background: cadetblue; }
+  #wrap > div:before{
+    content:'가로보기';
+  }
+}

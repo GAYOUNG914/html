@@ -1,0 +1,25 @@
+@charset "UTF-8";
+body{background: black;}
+ul li{
+  color: white;
+}
+
+ul li:nth-child(5){
+  color: yellow;
+}
+
+ul li:nth-child(10){
+  color: red;
+}
+/*자식 또는 자손 선택자를 선택하는 방법*/
+/* ul > li > ul li:nth-child(3){
+  color: green;
+} */
+
+/* li.active{
+  color: blue;
+} */
+
+.submenu li:nth-child(3){
+  color: green;
+}

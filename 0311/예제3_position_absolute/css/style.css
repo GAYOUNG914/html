@@ -1,0 +1,24 @@
+@charset "UTF-8";
+div{
+  position: absolute;
+  width:100px;
+  height: 100px;
+  background: red;
+  color:white;
+}
+
+.box1{
+  position: relative;
+  background: skyblue;
+}
+.box2{
+  position: absolute;
+  background: green;
+  top:50px;
+}
+.box3{
+  position: relative;
+  background: blue;
+}
+.box4{ background: purple;}
+.box5{ background: pink;}

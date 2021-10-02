@@ -1,0 +1,23 @@
+@charset "UTF-8";
+.box1{
+  position: relative;
+  width : 100px;
+  height: 100px;
+  background: red;
+
+}
+.box2{
+  position: relative;
+  width : 100px;
+  height: 100px;
+  background: blue;
+  top: 50px;
+}
+.box3{
+  position: relative;
+  width : 100px;
+  height: 100px;
+  top: 0;
+  background: pink;
+  z-index: -1
+}

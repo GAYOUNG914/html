@@ -1,0 +1,85 @@
+@charset "UTF-8";
+*{ margin: 0; padding: 0;}
+html, body{ height: 100%;}
+ul,ol{ list-style: none;}
+a {text-decoration: none;}
+img{ border : 0;}
+body{ background: black;}
+
+/*keyframes group*/
+@keyframes spinner1{
+  from{
+    transform: scale(1.6) rotate(0deg);
+  }
+  to{
+    transform: scale(1.6) rotate(360deg);
+  }
+}
+
+@keyframes spinner1{
+  from{
+    transform: scale(1.2) rotate(0deg);
+  }
+  to{
+    transform: scale(1.2) rotate(-360deg);
+  }
+}
+
+@keyframes textAni{
+  from{
+    opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+#wrap{
+  display: flex; /*오브젝트 전체 가운데정렬*/
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+#spinner{
+  position: relative; /*div position 앱솔 주기위함*/
+  display: flex; /*spinner 안의 텍스트 가운데 정렬*/
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+}
+
+#spinner p{
+  color: white;
+  font-size: 12px;
+  z-index: 500;
+  animation: textAni 1s ease-in-out 0s infinite alternate;
+}
+
+#spinner div{
+  position: absolute;
+  width: 100%; /*left: 0; right: 0;/ 가로세로 40px*/
+  height: 100%;
+  border-radius: 100%;
+}
+
+#spinner div:nth-of-type(1){
+  border: 3px solid rgba( 110, 240, 50, .2);
+  animation: spinner1 1s linear 0s infinite;
+}
+
+#spinner div:nth-of-type(2){
+  border: 3px solid rgba( 110, 240, 50, .8); /*rgba(r,g,b,불투명도)*/
+  animation: spinner2 1s linear 0s infinite; /*애니메이션이름, 지속시간, 속도, 대기시간, 반복횟수*/
+}
+
+#spinner div:after{
+  content:'';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: black;
+  transform: scale(.2, 1.2);/*width100%에서 0.2(20%)로 너비축소 height100%에서 120%로 높이확대*/
+}

@@ -1,0 +1,22 @@
+@charset "UTF-8";
+.box{
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  margin: 10px;
+  padding: 10px;
+}
+.box:hover{
+  padding: 50px;
+  background: green;
+  color: #ffffff;
+}
+
+
+.box1{
+  padding: 50px 10px 5px 30px;
+  margin-bottom:0;
+}
+.box2{
+  margin-top:0;
+}

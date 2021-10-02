@@ -1,0 +1,39 @@
+@charset "UTF-8";
+.box{
+  width: 200px;
+  height: 200px;
+}
+
+.abs_box{
+  position: absolute;
+  background: yellow;
+  width: 400px;
+  height: 400px;
+  left: 200px;
+  top: 200px;
+}
+
+.fixed_box{
+  position: fixed;
+  width: 100px;
+  height: 100px;
+  background-color: #ff0000;
+  right: -10px;
+  bottom: 10px;
+}
+
+.static_box{
+  background-color: green;
+}
+
+.abs_box_type_b{
+  position: absolute;
+  background-color: pink;
+  width: 100px;
+  height: 100px;
+  left: 0;
+  top: 0;
+  right: 100px;
+  bottom: 100px;
+  /*absolute, fixed 일때 width, height 속성이 지정되어있다면 위치는 left,top,right,bottom동시 적용 시 left,top이 적용된다.*/
+}

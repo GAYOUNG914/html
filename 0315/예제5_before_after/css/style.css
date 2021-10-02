@@ -1,0 +1,13 @@
+@charset "UTF-8";
+body{
+
+}
+
+.box:after{
+  content: 'afterelement';
+  color: red;
+}
+.box:before{
+  content: 'beforelement';
+  color: blue;
+}

@@ -1,0 +1,24 @@
+@charset "UTF-8";
+.box{
+  position: absolute;
+  width:100px;
+  height: 100px;
+  background: red;
+  color:white;
+}
+.box1{
+  position: relative;
+  background: skyblue; left: 100px; top:100px;
+}
+.box2{
+  position: absolute;
+  background: gray; top:50; right: 0px;
+}
+.box3{background: black; left: 150px; top:150px;}
+.box4{background: purple; left: 200px; top:200px;}
+.box5{background: pink; left: 250px; top:250px;}
+.box6{background: yellow; left: 300px; top:300px;}
+.box7{background: green; left: 350px; top:350px;}
+.box8{background: blue; left: 400px; top:400px;}
+.box9{background: #325aa8; left: 450px; top:450px;}
+.box10{background: #5fa832; left: 500px; top:500px;}

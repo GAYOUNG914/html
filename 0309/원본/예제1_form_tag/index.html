@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>form elements</title>
+    <meta charset="utf-8">
+    <meta name="description" content="description">
+    <link rel="stylesheet" href="path">
+  </head>
+  <body>
+    <header>
+      <h1>form tag란 무엇인가?</h1>
+      <h2>form 구조와 해당 tag에 대해서 알아본다.</h2>
+    </header>
+    <div id="container">
+      <form action="" method="">
+        <!-- <span>10이하 입력 가능</span> -->
+        <input type="text" id="text1" name="text1" minlength="4" maxlength="10" size="50">
+        <input type="radio" name="gender" value="female"><span>여성</span>
+        <input type="radio" name="gender" value="male"><span>남성</span><br>
+        <label for="ch1">checkbox label 사용법</label><br>
+        <input type="checkbox" id="ch1"><span>코딩</span><br>
+        <input type="checkbox"><span>디자인</span><br>
+        <span>E-mail&nbsp;:&nbsp;</span><input type="email"><br>
+        <span>search&nbsp;:&nbsp;</span><input type="search"><br>
+        <!--fieldset-->
+        <fieldset>
+          <legend>날짜 관려 입력 폼</legend>
+          <input type="date"><br>
+          <input type="month"><br>
+          <label for="week">camping week</label>
+          <input type="week" id="week" name="week" value="2021-W18"><br>
+          <input type="time" name="retime" value="18:00">
+          <input type="datetime-local" id="reservation-time" name="reservation-time" value="2020-09-10T18:10" min="2020-08-01T00:00" max="2020-10-01T00:00">
+        </fieldset>
+        <input type="color" name="selectedColor">color picker<br>
+        <input type="file" name="selectfile">select file<br>
+        <input type="number"><br>
+        <span>비밀번호 입력</span><input type="password"><br>
+        <span>전화번호 입력</span><input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{4}-[0-9]{4}"><br>
+        <button type="submit">submit</button>
+        <button type="cancel">cancel</button>
+      </form>
+    </div>
+    <footer>
+      <p>copyright</p>
+    </footer>
+  </body>
+</html>

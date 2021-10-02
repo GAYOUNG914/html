@@ -1,0 +1,19 @@
+@charset "UTF-8";
+body{
+background: black;
+color: #ffffff;
+}
+
+/* 인접 선택자 */
+/* ul.gnb + p {
+  color:red;
+}
+
+p + span{
+  color:yellow;
+} */
+
+/* 동위선택자 */
+ul.gnb ~ p{
+  color: yellow;
+}

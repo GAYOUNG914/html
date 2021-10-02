@@ -1,0 +1,107 @@
+@charset "UTF-8";
+.menu_tree_management{
+  border: 1px solid #f1f1f1;
+  display: inline-block; /*어떻게 될지 불확실하므로 inline도 되고 block도되는 inline-block으로 지정*/
+  box-sizing: border-box;
+  padding: 30px;
+  background: #f9f9f9;
+}
+
+.menu_tree_management .title{
+  height: 18px;
+  line-height: 18px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.menu_tree_management input[type=checkbox]{
+  display: none;
+}
+
+.menu_tree_management input[type=checkbox] + label{
+  position: relative;
+  display: inline-block;
+  padding-left: 30px;
+  height: 19px;
+  line-height: 19px;
+  font-size: 16px;
+  color: #333;
+}
+
+
+.menu_tree_management input[type=checkbox] + label:before{
+  content:'';
+  position: absolute;
+  width: 19px;
+  height: 19px;
+  left: 0;
+  top: 0;
+  background: url('../img/menu_tree_icon_plus.png');
+}
+
+.menu_tree_management input[type=checkbox]:checked + label:before{
+  background: url('../img/menu_tree_icon_minus.png');
+}
+
+/* .menu_tree_management input[type=checkbox]:checked + label:before{
+  opacity: 0;
+} */
+
+/* .menu_tree_management input[type=checkbox] + label:after{
+  opacity: 0;
+} */
+
+/* .menu_tree_management input[type=checkbox]:checked + label:after{
+  content:'';
+  position: absolute;
+  width: 19px;
+  height: 19px;
+  left: 0;
+  top: 0;
+  opacity: 1;
+  background: url('../img/menu_tree_icon_minus.png');
+  transition: 1s;
+} */
+
+/**서브메뉴 노출**/
+.menu_tree_management input[type=checkbox] + label ~ *{
+  display: none;
+}
+
+.menu_tree_management input[type=checkbox]:checked + label ~ *{
+  display: block;
+}
+
+.menu_tree_management input[type=checkbox]:checked + label{
+  color: #1a73c4;
+}
+
+.menu_tree_management .table_ctn .menu_tree > ul > li{
+  margin-bottom: 30px;
+} /*꺾쇠는 자식만 선택, 자손 ㄴㄴ*/
+
+.menu_tree_management .table_ctn .menu_tree > ul > li:last-child{
+  margin-bottom: 0;
+}
+
+.menu_tree_management .table_ctn .menu_tree .sub_menu{
+  margin-left: 30px;
+  margin-top: 25px;
+  /* text-indent: 10px; /*text 들여쓰기. margin-left대신 써도됨*/ */
+}
+
+.menu_tree_management .table_ctn .menu_tree .sub_menu > li{
+  position: relative;
+  padding-left: 18px;
+  margin-bottom: 18px;
+  font-size: 14px;
+  color: #666;
+}
+
+.menu_tree_management .table_ctn .menu_tree .sub_menu > li:before{
+  content:'L'; /*ㅂ + 한자 하면 꺾쇠 기호 나옴*/
+  position: absolute;
+  left: 0;
+  top: 0;
+}

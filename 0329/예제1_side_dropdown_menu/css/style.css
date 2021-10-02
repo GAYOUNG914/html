@@ -1,0 +1,91 @@
+@charset "UTF-8";
+#wrap{
+  width: 1200px;
+  margin: 0 auto;
+}
+
+@media screen and ( max-width: 1200px) {
+  #wrap{
+    width: 100%;
+  }
+} /*이걸 설정하고 창 크게하면 밑에 스크롤 안생기고 알아서 문장길이 바꿈*/
+
+#lnb{
+  position: fixed;
+  width: 300px;
+  height: 100vh;
+  z-index: 300;
+  padding: 20px;
+  box-sizing: border-box;
+  background: #ff6a67;
+}
+
+#lnb h1 a{
+  color: white;
+}
+
+/*menutree 재정의 사용*/
+#lnb .menu_tree_management {
+  border: 0;
+  background: none;
+}
+
+#lnb .menu_tree_management .title,#lnb .menu_tree_management li,#lnb .menu_tree_management input[type=checkbox] + label{
+  color: white;
+}
+
+#lnb .menu_tree_management input[type=checkbox]:checked + label {
+  color: black;
+}
+/* #lnb .menu_tree_management .title{
+  color: white;
+}
+
+#lnb .menu_tree_management li{
+  color: white;
+}
+
+#lnb .menu_tree_management input[type=checkbox] + label {
+  color: white;
+} */
+
+
+#container,#footer{
+  padding-left: 300px;
+  /* box-sizing: border-box; 블럭은 자동으로 줄어들어서 굳이 이걸 지정 안해줘도 된다.*/
+  background: lightgreen;
+}
+
+#login_menu{
+  height: 50px;
+  line-height: 50px;
+  overflow: hidden;
+  padding: 0 10px;
+  box-sizing: border-box;
+  background: #f1f1f1;
+}
+
+#login_menu ul{
+  overflow: hidden;
+  float: right;
+}
+
+#login_menu ul li{
+  float: left;
+  margin-left: 10px;
+}
+
+#login_menu ul li:first-child{
+  margin-left: 0px;
+}
+
+.contents{
+  padding: 50px;
+}
+
+#footer{
+  text-align: center;
+  height: 50px;
+  line-height: 50px;
+  background: #f1f1f1f1;
+}
